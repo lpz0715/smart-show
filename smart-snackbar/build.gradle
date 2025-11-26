@@ -45,7 +45,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.lpz0715'
                 artifactId = 'smart-snackbar'
-                version = uploadVersion
+                version = "1.0.0"
 
                 pom {
                     name = 'smart-snackbar'
