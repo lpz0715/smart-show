@@ -47,7 +47,7 @@ afterEvaluate {
         publications {
             maven(MavenPublication) {
                 from components.release
-                groupId = 'io.github.vincent-series'
+                groupId = 'com.github.lpz0715'
                 artifactId = 'smart-dialog'
                 version = uploadVersion
 
@@ -86,10 +86,6 @@ afterEvaluate {
                 url = uploadVersion == stagingVersion ?
                         'https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/'
                         : 'https://s01.oss.sonatype.org/content/repositories/snapshots/'
-                credentials {
-                    username repo_user_name
-                    password repo_password
-                }
             }
         }
 

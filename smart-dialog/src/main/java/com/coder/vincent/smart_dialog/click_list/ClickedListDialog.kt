@@ -78,7 +78,7 @@ class ClickedListDialog : DialogDefinition<ClickedListDialog.Config> {
 
     override fun setupRootViewLayoutParams(lp: FrameLayout.LayoutParams) {
         super.setupRootViewLayoutParams(lp)
-        (160).dpToPx().let {
+        (100).dpToPx().let {
             lp.topMargin = it
             lp.bottomMargin = it
         }

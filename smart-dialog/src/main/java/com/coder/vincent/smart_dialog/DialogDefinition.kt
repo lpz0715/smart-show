@@ -21,7 +21,7 @@ interface DialogDefinition<CONFIG : DialogConfig> {
     }
 
     fun setupRootViewLayoutParams(lp: FrameLayout.LayoutParams) {
-        lp.width = min(Toolkit.screenWidth() - 70.dpToPx(), 290.dpToPx())
+        lp.width = min(Toolkit.screenWidth() - 70.dpToPx(), (Toolkit.screenWidth() * 0.6f).toInt())
         lp.height = FrameLayout.LayoutParams.WRAP_CONTENT
         56.dpToPx().let {
             lp.topMargin = it

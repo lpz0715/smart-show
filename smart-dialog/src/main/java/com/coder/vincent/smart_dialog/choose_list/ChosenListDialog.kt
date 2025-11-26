@@ -162,7 +162,7 @@ class ChosenListDialog : DialogDefinition<ChosenListDialog.Config> {
 
     override fun setupRootViewLayoutParams(lp: FrameLayout.LayoutParams) {
         super.setupRootViewLayoutParams(lp)
-        (135).dpToPx().let {
+        (100).dpToPx().let {
             lp.topMargin = it
             lp.bottomMargin = it
         }
